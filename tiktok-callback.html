@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unmapped sign-in</title>
+<style>body{margin:0 auto;max-width:720px;padding:32px 20px;font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6;color:#2B2420;background:#FBF6EA}</style>
+</head><body>
+<p>Finishing TikTok sign-in on this computer…</p>
+<script>
+  // TikTok only redirects to https pages: hand the sign-in result to the uploader running on this computer.
+  location.replace('http://localhost:4580/oauth/tiktok/callback' + location.search)
+</script>
+</body></html>
